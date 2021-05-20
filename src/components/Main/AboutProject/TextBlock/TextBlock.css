@@ -1,0 +1,20 @@
+.text-block {
+  margin-top: 70px;
+  max-width: 550px;
+}
+
+.text-block__title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-style: normal;
+    font-weight: 400;
+
+    margin: 0 0 26px 0;
+}
+
+.text-block__text {
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: normal;
+    font-weight: 400;
+}

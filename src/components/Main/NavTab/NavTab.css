@@ -1,0 +1,33 @@
+.nav-tab {
+    background-color: #272727;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-tab__link-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-tab__link-item {
+    list-style: none;
+    padding: 0;
+    margin: 0 40px 0 0;
+}
+  
+.nav-tab__link-item:last-of-type {
+    margin-right: 0;
+}
+
+.nav-tab__link {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+}

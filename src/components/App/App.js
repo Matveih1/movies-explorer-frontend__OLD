@@ -4,6 +4,7 @@ import { Route, Switch, Redirect, useHistory} from 'react-router-dom';
 import './App.css';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
+import Main from '../Main/Main';
 
 function App() {
 
@@ -34,11 +35,6 @@ function App() {
 
   return (
     <>
-
-      {/* <Login           
-        onLogin = {handleLogin} 
-      />   */}
-
       <Switch>
         <Route path="/sing-in">
           <Login 
@@ -49,6 +45,9 @@ function App() {
           <Register 
             onRegister = {handleRegister}
           />  
+        </Route>
+        <Route path="/main">
+          <Main/>  
         </Route>
         {/* <ProtectedRoute 
           path      = "/main" 
