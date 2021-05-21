@@ -1,7 +1,11 @@
 .text-block {
-  margin-top: 70px;
+  margin: 70px 40px 0 0;
   max-width: 550px;
 }
+
+.text-block:last-of-type {
+    margin-right: 0;
+  }
 
 .text-block__title {
     font-size: 20px;

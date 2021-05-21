@@ -1,0 +1,26 @@
+.about-me {
+    background-color: #303030;
+    padding: 100px 70px;
+}
+
+.about-me__info {
+    margin: 66 0 0 0;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me__name {
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about-me__profile {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -6,11 +6,11 @@ import './AboutProject.css';
 
 function AboutProject(props) {
     return (
-        <>
-            <section className="about-project">
-                <SectionTitle
-                    title='О проекте'
-                />
+        <section className="about-project">
+            <SectionTitle
+                title='О проекте'
+            />
+            <div className="about-project__text-blocks">
                 <TextBlock
                     title="Дипломный проект включал 5 этапов"
                     text="Составление плана, работу над бэкендом, вёрстку, добавление функциональности и финальные доработки."
@@ -19,22 +19,22 @@ function AboutProject(props) {
                     title="На выполнение диплома ушло 5 недель"
                     text="У каждого этапа был мягкий и жёсткий дедлайн, которые нужно было соблюдать, чтобы успешно защититься."
                 />
-            </section>
-            <div className='about-project__timeless'>
-                <div className='about-project__timeless-item about-project__timeless-first-part'>
+            </div>
+            <div className='about-project__time'>
+                <div className='about-project__time-item about-project__time-first-part'>
                 1 неделя
                 </div>
-                <div className='about-project__timeless-item about-project__timeless-second-part'>
+                <div className='about-project__time-item about-project__time-second-part'>
                 4 недели
                 </div>
-                <div className='about-project__timeless-item about-project__timeless-text'>
+                <div className='about-project__time-item about-project__time-text'>
                 Back-end
                 </div>
-                <div className='about-project__timeless-item about-project__timeless-text'>
+                <div className='about-project__time-item about-project__time-text'>
                 Front-end
                 </div>
             </div>
-        </>
+        </section>
     )
 }
 

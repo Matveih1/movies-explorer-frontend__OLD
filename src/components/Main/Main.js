@@ -4,6 +4,8 @@ import './Main.css';
 import Promo from './Promo/Promo';
 import NavTab from './NavTab/NavTab';
 import AboutProject from './AboutProject/AboutPoject';
+import Techs from './Techs/Techs';
+import AboutMe from './AboutMe/AboutMe';
 
 function Main (props) {
 
@@ -12,6 +14,8 @@ function Main (props) {
       <Promo/>
       <NavTab/>
       <AboutProject/>
+      <Techs/>
+      <AboutMe/>
     </>
   )
 }
