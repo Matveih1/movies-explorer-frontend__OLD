@@ -5,6 +5,8 @@ import './App.css';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
 import Main from '../Main/Main';
+import Movies from '../Movies/Movies';
+import SavedMovies from '../SavedMovies/SavedMovies';
 
 function App() {
 
@@ -48,6 +50,12 @@ function App() {
         </Route>
         <Route path="/main">
           <Main/>  
+        </Route>
+        <Route patch="/movies">
+          <Movies/>
+        </Route>
+        <Route patch="/saved-movies">
+          <SavedMovies/>
         </Route>
         {/* <ProtectedRoute 
           path      = "/main" 
