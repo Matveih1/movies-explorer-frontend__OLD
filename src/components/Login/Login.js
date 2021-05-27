@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.svg';
 import Input from '../Input/Input';
 import Form from '../Form/Form';
 
@@ -38,19 +37,19 @@ function Login(props) {
     props.onLogin(data)
       // .then(resetForm)
       // .catch(err => console.log(err));
+
+    resetForm();
   } 
 
   return (
-    <div className="page">
-      <header className="header">
-        <img className="header__logo" src={logo} alt="Лого" />
-      </header>
-
+    <div className="login">
       <Form 
         name = "login"
         onSubmit = {handleSubmit}
         title = "Рады видеть!"
         textSubmitBtn = "Войти"
+        textLink = "Ещё не зарегистрированы?"
+
       >   
         <Input 
           title       = "E-mail"
@@ -72,9 +71,7 @@ function Login(props) {
           onChange    = {handleChange} 
         />
       </Form>
-      <p className="popup__link">еще не зарегистрированы? 
-      <Link to={'/sing-up'} className="header__link">Регистрация</Link>
-      </p>
+      
     </div>
   )
 }

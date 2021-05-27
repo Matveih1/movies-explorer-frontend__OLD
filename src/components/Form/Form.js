@@ -1,25 +1,30 @@
 import React from 'react';
-import Button from '../Button/Button';
 
 import './Form.css';
+import logo from '../../images/logo.svg';
+import Button from '../Button/Button';
 
 function Form(props) {
 
   return (
-    <form
-      className = "form"
-      name      = { props.name }
-      onSubmit  = { props.onSubmit }
-    >
-      <h2 className="form__title">{ props.title }</h2> 
-
-      { props.children }
-      
-      <span className="form__message">{props.errorMessage}</span>
-      <Button
-        text={props.textSubmitBtn}
-      />
-    </form>
+    <div className="form">
+      <header className="form-header">
+        <img className="form-header__logo" src={logo} alt="Лого" />
+        <h2 className="form__title">{ props.title }</h2> 
+      </header>
+      <form
+        className = "form"
+        name      = { props.name }
+        onSubmit  = { props.onSubmit }
+      >
+        { props.children }
+        
+        <span className="form__message">{props.errorMessage}</span>
+        <Button
+          text={props.textSubmitBtn}
+        />
+      </form>
+    </div>
   );
 }
 

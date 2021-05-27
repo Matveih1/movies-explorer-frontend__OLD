@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect, useHistory} from 'react-router-dom';
+import { Route, Switch, useHistory} from 'react-router-dom';
 
 import './App.css';
 import Login from '../Login/Login';
@@ -10,7 +10,8 @@ import SavedMovies from '../SavedMovies/SavedMovies';
 
 function App() {
 
-  const loggedIn = false;
+  const [loggedIn, setLoggedIn] = React.useState(false);
+  const history = useHistory();
 
   function handleLogin({ email, password}) {
     // return auth.authorize(email, password)
@@ -28,16 +29,23 @@ function App() {
     // });
     console.log(email);
     console.log(password);
+    setLoggedIn(true);
   }
 
   function handleRegister({ email, password}) {
     console.log(email);
     console.log(password);
+    history.push('/sing-in');
   }  
 
   return (
     <>
       <Switch>
+        <Route exact path="/">
+          <Main
+            loggedIn
+          />  
+        </Route>  
         <Route path="/sing-in">
           <Login 
             onLogin = {handleLogin} 
@@ -48,25 +56,12 @@ function App() {
             onRegister = {handleRegister}
           />  
         </Route>
-        <Route path="/main">
-          <Main/>  
-        </Route>
-        <Route patch="/movies">
+        <Route path="/movies">
           <Movies/>
         </Route>
-        <Route patch="/saved-movies">
+        <Route path="/saved-movies">
           <SavedMovies/>
         </Route>
-        {/* <ProtectedRoute 
-          path      = "/main" 
-          loggedIn  = {loggedIn} 
-          onSignOut = {handleSignOut} 
-          email     = {email}
-          component = {MainPage} 
-        /> */}
-        <Route exact path="/">
-          {loggedIn ? <Redirect to="/sing-up" /> : <Redirect to="/sing-in" />}
-        </Route> 
       </Switch>    
     </>
   );
