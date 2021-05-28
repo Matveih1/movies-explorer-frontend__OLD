@@ -7,6 +7,7 @@ import image from '../../images/movies1.jpg';
 function MoviesCardList (props) {
   return (
     <section className="card-list">
+  
       <MoviesCard
         src={image}
         name="33 слова о дизайне"

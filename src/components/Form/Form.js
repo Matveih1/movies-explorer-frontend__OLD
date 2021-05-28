@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Form.css';
 import logo from '../../images/logo.svg';
@@ -24,6 +25,9 @@ function Form(props) {
           text={props.textSubmitBtn}
         />
       </form>
+      <p className="form__text">{ props.formText } 
+      <Link to= { props.linkLink } className="form__link"> { props.linkText } </Link>
+      </p>
     </div>
   );
 }

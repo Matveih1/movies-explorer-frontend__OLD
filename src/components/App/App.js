@@ -7,6 +7,7 @@ import Register from '../Register/Register';
 import Main from '../Main/Main';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
+import Profile from '../Profile/Profile';
 
 function App() {
 
@@ -14,22 +15,10 @@ function App() {
   const history = useHistory();
 
   function handleLogin({ email, password}) {
-    // return auth.authorize(email, password)
-    // .then(data => {
-
-    //   console.log(data);
-    //   if (!data || data.statusCode === 400) {
-    //     openInfoPopup(false);
-    //     // throw new Error('Что-то пошло не так');
-    //   }
-    //   if (data.token) {
-    //     localStorage.setItem('jwt', data.token);
-    //     tokenCheck();
-    //   }
-    // });
     console.log(email);
     console.log(password);
     setLoggedIn(true);
+    history.push('/movies');
   }
 
   function handleRegister({ email, password}) {
@@ -61,6 +50,9 @@ function App() {
         </Route>
         <Route path="/saved-movies">
           <SavedMovies/>
+        </Route>
+        <Route path="/profile">
+          <Profile/>
         </Route>
       </Switch>    
     </>

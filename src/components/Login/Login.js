@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Input from '../Input/Input';
 import Form from '../Form/Form';
 
@@ -42,14 +41,14 @@ function Login(props) {
   } 
 
   return (
-    <div className="login">
       <Form 
         name = "login"
         onSubmit = {handleSubmit}
         title = "Рады видеть!"
         textSubmitBtn = "Войти"
-        textLink = "Ещё не зарегистрированы?"
-
+        formText = "Ещё не зарегистрированы?"
+        linkText = "Регистрация"
+        linkLink = "/sing-up"
       >   
         <Input 
           title       = "E-mail"
@@ -71,8 +70,6 @@ function Login(props) {
           onChange    = {handleChange} 
         />
       </Form>
-      
-    </div>
   )
 }
 

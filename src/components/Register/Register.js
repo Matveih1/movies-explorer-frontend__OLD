@@ -41,17 +41,24 @@ function Login(props) {
   } 
 
   return (
-    <div className="page">
-      <header className="header">
-        <img className="header__logo" src={logo} alt="Лого" />
-      </header>
-
       <Form 
         name = "login"
         onSubmit = {handleSubmit}
-        title = "Рады видеть!"
-        textSubmitBtn = "Войти"
+        title = "Добро пожаловать!"
+        textSubmitBtn = "Зарегестрироваться"
+        formText = "Уже зарегистрированы?"
+        linkText = "Войти"
+        linkLink = "/sing-in"
       >   
+        <Input 
+          title       = "Имя"
+          name        = "name" 
+          type        = "text" 
+          value       = {data.email}
+          required    = {true} 
+          onChange    = {handleChange} 
+        />
+
         <Input 
           title       = "E-mail"
           name        = "email" 
@@ -72,8 +79,6 @@ function Login(props) {
           onChange    = {handleChange} 
         />
       </Form>
-      <Link to={'/sing-in'} className="header__link">Регистрация</Link>
-    </div>
   )
 }
 
