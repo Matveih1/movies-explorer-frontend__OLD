@@ -37,7 +37,7 @@
     font-weight: 400;
     font-style: normal;
 
-    margin-top: 18px;
+    margin: 18px 0 0 0;
 }
 
 .about-me__descr {
@@ -78,4 +78,83 @@
 
 .about-me__avatar {
     width: 270px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .about-me {
+        padding: 90px 50px;
+    }
+
+    .about-me__info {
+        margin-right: 40px;
+        width: 364px;
+    }
+
+    .about-me__info-block {    
+        max-height: 307px;
+    }
+
+    .about-me__name {
+        font-size: 40px;
+    }
+
+    .about-me__profile {
+        font-size: 12px;
+        margin-top: 16px;
+    }
+    
+    .about-me__descr {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .about-me__avatar {
+        width: 255px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-me {
+        padding: 70px 14px;
+    }
+
+    .about-me__info-block {
+        flex-direction: column-reverse;
+        max-height: none;
+        max-width: 100%;
+        margin-top: 60px;
+    }
+
+    .about-me__avatar {
+        width: 292px;
+        height: 352px;
+    }
+
+    .about-me__info {
+        margin-top: 40px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-me__name {
+        font-size: 30px;
+    }
+
+    .about-me__profile {
+        font-size: 11px;    
+        margin-top: 20px;
+    }
+
+    .about-me__descr {
+        font-size: 11px;
+    }
+
+    .about-me__link-items {
+        margin-top: 40px;
+    }
+
+    .about-me__link-item {
+        margin-right: 26px;
+    }
 }

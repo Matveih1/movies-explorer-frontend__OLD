@@ -6,7 +6,7 @@ import SectionTitle from '../SectionTitle/SectionTitle'
 function Techs(props) {
 
     return (
-        <section className="techs">
+        <section className="techs" id="technology">
             <SectionTitle
                 title='Технологии'
             />
@@ -17,6 +17,7 @@ function Techs(props) {
                 <li class="techs__item">CSS</li>
                 <li class="techs__item">JS</li>
                 <li class="techs__item">React</li>
+                <li class="techs__item">Git</li>
                 <li class="techs__item">Express.js</li>
                 <li class="techs__item">MongoDB</li>
             </ul>  

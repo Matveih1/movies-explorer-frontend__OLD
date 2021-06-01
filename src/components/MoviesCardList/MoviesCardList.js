@@ -20,6 +20,36 @@ function MoviesCardList (props) {
         time="13:40"
         isLiked="true"
       />
+      <MoviesCard
+        src={image}
+        name="33 слова о дизайне"
+        time="13:40"
+        isLiked="true"
+      />
+      <MoviesCard
+        src={image}
+        name="33 слова о дизайне"
+        time="13:40"
+        isLiked="true"
+      />
+      <MoviesCard
+        src={image}
+        name="33 слова о дизайне"
+        time="13:40"
+        isLiked="true"
+      />
+      <MoviesCard
+        src={image}
+        name="33 слова о дизайне"
+        time="13:40"
+        isLiked="true"
+      />
+      <MoviesCard
+        src={image}
+        name="33 слова о дизайне"
+        time="13:40"
+        isLiked="true"
+      />
     </section>
   )
 }

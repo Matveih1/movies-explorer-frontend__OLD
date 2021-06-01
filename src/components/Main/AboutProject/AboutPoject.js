@@ -4,9 +4,9 @@ import TextBlock from './TextBlock/TextBlock';
 
 import './AboutProject.css';
 
-function AboutProject(props) {
+function AboutProject() {
     return (
-        <section className="about-project">
+        <section className="about-project" id="aboutProject">
             <SectionTitle
                 title='О проекте'
             />

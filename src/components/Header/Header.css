@@ -70,8 +70,25 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .header {
     padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 0 14px;
+  }
+
+  .header__link {
+    font-size: 10px;
+  }
+
+  .header__button-green {
+    width: 54px;
+    height: 26px;
+    font-size: 10px;
+    margin-left: 14px;
   }
 }

@@ -8,7 +8,7 @@ import Portfolio from '../Portfolio/Portfolio';
 
 function AboutMe(props) {
     return(
-        <section className="about-me">
+        <section className="about-me" id="aboutMe">
             <SectionTitle
                 title='Студент'
             />
