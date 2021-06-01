@@ -1,11 +1,11 @@
 .search {
-    padding: 0 70px;
+    padding: 80px 70px 0;
+    background-color: #202020;
 }
 
 .search-block {
     display: flex;
     align-items: center;
-    margin-top: 80px;
 }
 
 .search-input {

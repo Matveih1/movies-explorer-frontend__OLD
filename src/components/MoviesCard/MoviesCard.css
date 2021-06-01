@@ -34,9 +34,10 @@
 
 .card__like {
   background-image: url('../../images/like.svg');
-  width: 30px;
+  min-width: 30px;
   height: 30px;
-  background-size: contain;
+  /* background-size: contain; */
+  background-position: center;
   background-repeat: no-repeat;
 
   border: none;
@@ -50,7 +51,7 @@
   transition: transform 0.3s;
 }
 
-.card__like {
+.card__like_active {
   background-image: url('../../images/likeActive.svg');
 }
 

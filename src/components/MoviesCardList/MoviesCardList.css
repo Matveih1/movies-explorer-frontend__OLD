@@ -1,9 +1,33 @@
 .card-list {  
-  margin: 150px 0 0 0;
+  padding: 150px 0 0 0;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 364px);
   gap: 37px 24px;
   justify-content: center;
   grid-auto-rows: 281px;
+
+  background-color: #202020;
+}
+
+.another {
+  background-color: #202020;
+  padding: 50px 70px 80px;
+}
+
+.button-movies {
+  width: 100%;
+  height: 36px;
+  box-shadow: none;
+  border: none;
+  border-radius: 6px;
+  background-color: #2f2f2f;
+  color: #fff;
+  
+  padding: 0;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 500;
 }
