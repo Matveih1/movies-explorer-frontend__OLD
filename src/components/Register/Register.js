@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.svg';
-import Input from '../Input/Input';
+import Input from '../Form/Input/Input';
 import Form from '../Form/Form';
 
 import './Register.css';

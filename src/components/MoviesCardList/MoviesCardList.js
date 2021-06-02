@@ -1,10 +1,14 @@
 import React from 'react';
+import { useLocation } from "react-router-dom";
 
 import './MoviesCardList.css';
 import MoviesCard from '../MoviesCard/MoviesCard';
 import image from '../../images/movies1.jpg';
 
 function MoviesCardList (props) {
+
+  const location = useLocation();
+
   return (
     <>
     <section className = "card-list">
@@ -52,13 +56,15 @@ function MoviesCardList (props) {
         isLiked={true}
       />
     </section>
-    <section className="another">
-      <button
-        className="button-movies"
-      >
-        Ещё
-      </button>
-    </section>
+    {location.pathname === '/movies' &&
+      <section className="another">
+        <button
+          className="button-movies"
+        >
+          Ещё
+        </button>
+      </section>
+    }
   </>
   )
 }

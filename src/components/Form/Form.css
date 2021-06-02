@@ -1,12 +1,21 @@
-.form {
+.form-container {
+  height: 100vh;
+  background-color: #202020;
+  padding-top: 70px;
+}
+
+.form-content {
+  width: 100%;
   max-width: 396px;
-  max-height: 700px;
   margin: 0 auto;
 }
 
-.form-header {
-  margin-top: 70px;
-} 
+.form {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .form__title {
   font-weight: 500;
@@ -30,4 +39,28 @@
   margin-left: 6px;
   color: #4285F4;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .form-container {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .form-container {
+    padding: 56px 30px 0;
+    display: block;
+  }
+
+  .form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }

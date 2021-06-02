@@ -70,3 +70,31 @@
   margin: 16px;
   padding: 0;
 }
+
+@media screen and (max-width: 1023px) {
+  .card__image {
+    height: 190px;
+  }
+
+  .card__info {
+    margin: 8px 14px;
+  }
+
+  .card__time {
+    margin: 0 0 0 14px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card__image {
+    height: 168px;
+  }
+
+  .card__info {
+    margin: 7px 10px;
+  }
+
+  .card__time {
+    margin: 0 0 0 10px;
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from '../Input/Input';
+import Input from '../Form/Input/Input';
 import Form from '../Form/Form';
 
 import './Login.css';

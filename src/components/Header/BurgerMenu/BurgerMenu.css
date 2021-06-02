@@ -49,7 +49,7 @@
   transform: rotate(-45deg);
   display: none;
   z-index: 10;
-  font-size: 22px;
+  font-size: 50px;
 
   cursor: pointer;
 }
@@ -92,4 +92,15 @@
 
 .burger__check:checked~.burger-menu {
   transform: translateX(0);
+}
+
+@media screen and (max-width: 767px) {
+  .burger-menu {
+    width: 100%;
+    padding: 144px 0 46px 0;
+  }
+
+  .menu__item {  
+    margin-top: 24px;
+  }
 }
